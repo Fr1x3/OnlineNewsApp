@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">OnlineNewsApp</string>
+
+<!-- categories label   -->
+    <string name="cat_business">business</string>
+    <string name="cat_genral">general</string>
+    <string name="cat_entertainment">entertainment</string>
+    <string name="cat_health">health</string>
+    <string name="cat_sport">sport</string>
+    <string name="cat_science">science</string>
+    <string name="cat_tech">technology</string>
+
 </resources>
