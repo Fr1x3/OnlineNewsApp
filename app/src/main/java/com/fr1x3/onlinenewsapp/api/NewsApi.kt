@@ -1,6 +1,7 @@
 package com.fr1x3.onlinenewsapp.api
 
-import com.fr1x3.onlinenewsapp.util.Resource
+import com.fr1x3.onlinenewsapp.model.ArticleResponse
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -13,7 +14,7 @@ interface NewsApi {
         @Query("country") country: String = "us",
         @Query("page") page: Int = 1,
         @Query("language") language: String = "en"
-    )
+    ) : Response<ArticleResponse>
 
 
     // search for specific news topic and/or category
@@ -22,5 +23,5 @@ interface NewsApi {
         @Query("country") country: String = "us",
         @Query("page") page: Int = 1,
         @Query("language") language: String = "en"
-    )
+    ) : Response<ArticleResponse>
 }
