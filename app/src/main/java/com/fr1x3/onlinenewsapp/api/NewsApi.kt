@@ -1,5 +1,6 @@
 package com.fr1x3.onlinenewsapp.api
 
+import com.fr1x3.onlinenewsapp.util.Resource
 import retrofit2.http.GET
 import retrofit2.http.Query
 
