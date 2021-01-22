@@ -1,106 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tl_search"
-        style="@style/roundedTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="search"
-        app:endIconDrawable="@drawable/ic_baseline_search_24"
-        app:endIconMode="custom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent=".8">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fillViewport="true"
-        android:paddingStart="4dp"
-        android:paddingEnd="4dp"
-        android:scrollbarThumbHorizontal="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tl_search">
-
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/category_chip_group"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_search"
+            style="@style/roundedTextView"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:singleLine="true"
-            app:singleSelection="true">
+            android:layout_marginTop="16dp"
+            android:hint="search"
+            app:endIconDrawable="@drawable/ic_baseline_search_24"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".8">
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_general"
-                android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:scrollbarThumbHorizontal="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_search">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/category_chip_group"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cat_genral" />
+                app:singleLine="true"
+                app:singleSelection="true">
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_business"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_business" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_genral" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_entertainment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_entertainment" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_business" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_health"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_health" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_entertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_entertainment" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_sport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_sport" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_health" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_science"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_science" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_sport" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_tech"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cat_tech" />
-        </com.google.android.material.chip.ChipGroup>
-    </HorizontalScrollView>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_science" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_news_content"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-        tools:listitem="@layout/news_item" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_tech" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_news_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+            tools:listitem="@layout/news_item" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
