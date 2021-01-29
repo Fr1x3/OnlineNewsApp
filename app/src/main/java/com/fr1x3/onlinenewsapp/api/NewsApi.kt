@@ -9,11 +9,12 @@ interface NewsApi {
 
 
     // get all news
-    @GET("v2/everything")
+    @GET("v2/top-headlines")
     suspend fun getAllNews(
         @Query("country") country: String = "us",
         @Query("page") page: Int = 1,
-        @Query("language") language: String = "en"
+        @Query("language") language: String = "en",
+        @Query("apiKey") apikey: String = ""
     ) : Response<ArticleResponse>
 
 

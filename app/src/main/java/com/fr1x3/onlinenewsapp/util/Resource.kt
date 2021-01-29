@@ -1,7 +1,7 @@
 package com.fr1x3.onlinenewsapp.util
 
 sealed class Resource<T>(
-    data: T? = null,
+    val data: T? = null,
     val message: String? = null
 ){
 

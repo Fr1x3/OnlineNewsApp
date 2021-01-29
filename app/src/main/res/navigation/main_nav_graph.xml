@@ -8,8 +8,7 @@
     <fragment
         android:id="@+id/nav_home_news"
         android:name="com.fr1x3.onlinenewsapp.ui.NewsHomefragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="fragment_home" >
         <action
             android:id="@+id/action_newsHomefragment_to_singleNewsFragment"
             app:destination="@id/nav_news" />
